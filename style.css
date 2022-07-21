@@ -182,11 +182,31 @@ aside a{
    }
    
    .fa-twitter  {
-    font-size: xx-large;
+    font-size: x-large;
     color: rgb(40, 109, 136);
     text-align: center;
    }
    .social{
     flex-direction: column;
    }
+}
+
+/* For Tablet version */
+
+@media only screen and (min-width:688px) and(max-width:992px) {
+   .banner{
+    background-color: aqua;
+   }
+   .container{
+    flex-direction: column;
+   }
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+       }
+.aside{
+    flex-direction: row;
+    
+}
+   
+
 }
