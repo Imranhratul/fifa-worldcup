@@ -8,6 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Top Banner */
 
 .banner{
     display: flex;
@@ -16,6 +17,7 @@ body {
     border-radius: 9px;
     margin-top: 50px;
     margin-left: 140px;
+    
 }
 
 .great-show {
@@ -42,6 +44,9 @@ body {
     margin-left: 50px;
     margin-right: 79px;
 }
+
+/* Blog Section */
+
 .container{
     display: flex;
 }
@@ -97,17 +102,91 @@ aside a{
 .fa-regular{
     margin-left: 10px;
 }
-.footer-part-1 { 
-    background-color: rgb(41, 38, 38);
-    color: white;
-    text-align: center;
-    height: 300px;
-    padding-top: 50px;
+
+
+ /* Footer  */
+
+ .footer{
+    background-color: grey;
+    height: 600px;
     margin-top: 100px;
+    padding-top: 50px;
     
+ }
+
+#goal{
+    
+    text-align: center; 
 }
 .footer-part-2{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.social{
+    text-align: center;
+    margin-inline: 40%;
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 50px;
+    
+}
+
+.fa-linkedin  {
+    font-size: large;
+    color: rgb(40, 109, 136);
+    text-align: center;
+    background-color: white;
+    
+}
+.fa-twitter{
+    font-size: large;
+    color: rgb(23, 138, 238);
+    background-color: rgb(250, 250, 250);  
+}
+
+
+/* Media Queries */
+
+/* ----------Mobile Device--------- */
+
+@media only screen and (max-width:688px) {
+    .banner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       
+    }
+   .marcelo img{
+    width: 60%;
+    height: 50%;
+   }
+   .great-show{
+    width: 50%;
+
+   }
+   .container{
+    flex-direction: column;
+   }
+   .cards{
+    grid-template-columns: repeat(1, 1fr);
+   }
+   .footer-part-2{
+    
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+     text-align: center;
+     padding-top: 50px;
+   }
+   .fa-linkedin  {
+    font-size: xx-large;
+    color: rgb(40, 109, 136);
+    text-align: center;
+   }
+   
+   .fa-twitter  {
+    font-size: xx-large;
+    color: rgb(40, 109, 136);
+    text-align: center;
+   }
+   .social{
+    flex-direction: column;
+   }
 }
