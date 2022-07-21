@@ -135,7 +135,8 @@ aside a{
    }
    .container-1{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);   
+    grid-template-columns: repeat(1, 1fr);
+    width: auto;   
    }
    .card{
     justify-items: center;
